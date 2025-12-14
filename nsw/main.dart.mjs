@@ -493,6 +493,7 @@ class CompiledApp {
       _1413: (string, token) => string.split(token),
       _1414: Object.is,
       _1415: o => o instanceof Array,
+      _1416: (a, i) => a.push(i),
       _1419: (a, l) => a.length = l,
       _1420: a => a.pop(),
       _1421: (a, i) => a.splice(i, 1),
