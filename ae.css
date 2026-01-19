@@ -1,0 +1,95 @@
+ html {
+     padding-left: 10pt;
+     padding-right: 10pt;
+ }
+
+ body {
+     color: #222;
+     font-family: "Nunito", sans-serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+     line-height: normal;
+     max-width: 962px;
+     margin: auto;
+     background-color: #FAF9F8;
+ }
+
+ h1 {
+     font-family: "Maven Pro", sans-serif;
+     font-size: 2.5em;
+     color: #f87a30;
+     font-weight: bold;
+     font-optical-sizing: auto;
+     font-style: normal;
+     padding-top: 2rem;
+     margin-bottom: 0;
+ }
+
+ h2 {
+     font-family: "Maven Pro", sans-serif;
+     font-size: 1.5em;
+     color: #00b294;
+     font-weight: bold;
+     font-optical-sizing: auto;
+     font-style: normal;
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ blockquote {
+     font-size: 1.5em;
+     margin: 0;
+ }
+
+ div.nav>ul {
+     float: right;
+ }
+
+ .nav li {
+     float: left;
+     list-style-type: none;
+     position: relative;
+ }
+
+ @media screen and (min-width: 601px) {
+     .nav li a {
+         padding-left: 2rem;
+         font-size: 1.1rem;
+     }
+ }
+
+ /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+ @media screen and (max-width: 600px) {
+     .nav li a {
+         padding-left: 0.5rem;
+         font-size: 0.9rem;
+     }
+ }
+
+ .nav li a {
+     font-family: "Maven Pro", sans-serif;
+     color: #f99154;
+     font-weight: bold;
+     font-optical-sizing: auto;
+     font-style: normal;
+ }
+
+ footer {
+     padding-top: 1rem;
+     font-weight: 500;
+     text-align: center;
+ }
+
+ footer a {
+     color: #4cc9b4;
+ }
+
+ img,
+ video {
+     max-width: 100%;
+     height: auto;
+ }
