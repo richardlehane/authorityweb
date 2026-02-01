@@ -12,6 +12,17 @@
     <xsl:variable name="APPRAISALREPORT">
         <xsl:value-of select="'true'" />
     </xsl:variable>
+    <!-- in appraisal report only, use sequential numbering if 10 or fewer classes-->
+    <xsl:variable name="SEQNUMBERING">
+        <xsl:choose>
+            <xsl:when test="count(//rda:Class)&lt;11">
+                <xsl:value-of select="'true'" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'false'" />
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
     <xsl:variable name="SHOWJUSTIFICATION">
         <xsl:value-of select="'true'" />
     </xsl:variable>
@@ -611,7 +622,7 @@
                                         <w:szCs w:val="22" />
                                     </w:rPr>
                                     <w:t>
-                                        <xsl:value-of select="(rda:ID/@control='AR')[last()]" />
+                                        <xsl:value-of select="(rda:ID[@control='AR'])[last()]" />
                                     </w:t>
                                 </w:r>
                             </w:p>
